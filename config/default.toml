@@ -1,0 +1,51 @@
+# Genesis Engine Default Configuration
+
+[empire]
+name = "genesis-empire"
+auto_mode = false
+max_concurrent_projects = 5
+budget_per_project_usd = 500.0
+
+[scanning]
+enabled_sources = ["github", "reddit", "producthunt", "hackernews"]
+scan_interval_hours = 6
+min_opportunity_score = 75.0
+
+[ai]
+primary_provider = "genspark"
+fallback_provider = "openai"
+max_retries = 3
+
+[ai.genspark]
+api_key = ""
+workspace_id = ""
+base_url = "https://api.genspark.ai/v1"
+
+[ai.openai]
+api_key = ""
+model = "gpt-4-turbo-preview"
+
+[deployment]
+default_platform = "vercel"
+auto_deploy = false
+
+[deployment.vercel]
+api_token = ""
+team_id = ""
+
+[deployment.cloudflare]
+api_token = ""
+account_id = ""
+
+[github]
+token = ""
+org = ""
+auto_create_repos = true
+
+[revenue]
+track_interval_hours = 24
+alert_threshold_drop_percent = 20.0
+
+[database]
+path = "./data/genesis.db"
+auto_backup = true

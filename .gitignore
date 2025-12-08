@@ -1,0 +1,43 @@
+# Rust
+/target/
+Cargo.lock
+
+# Build artifacts
+*.pdb
+*.dSYM/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Data
+/data/
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test coverage
+*.profraw
+*.profdata
+coverage/
+lcov.info
+
+# Documentation build
+/docs/book/

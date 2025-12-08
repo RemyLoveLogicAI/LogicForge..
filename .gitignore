@@ -41,3 +41,4 @@ lcov.info
 
 # Documentation build
 /docs/book/
+.github/workflows/
